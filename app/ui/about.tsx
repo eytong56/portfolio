@@ -2,10 +2,12 @@ import Subsection from "@/app/ui/subsection";
 import type { Experience } from "@/app/lib/definitions";
 import { education, experiences } from "../lib/content";
 import { Fragment } from "react";
+import ExternalLink from "@/app/ui/external-link";
+import { AsteriskIcon } from "@phosphor-icons/react/dist/ssr";
 
 function Experience({ experience }: { experience: Experience }) {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row gap-16">
       <div className="flex-1 w-full">
         <h3 className="font-semibold">{experience.company}</h3>
         <p className="font-light">
@@ -64,8 +66,22 @@ export default function About() {
       </Subsection>
       <Subsection subsectionHeader="fun">
         <p className="font-light">
-          In my free time, I enjoy filming documentaries, taking photos, and
-          playing bass guitar.
+          <AsteriskIcon size="20px" weight="thin" className="inline" /> When
+          I&apos;m not coding, you can find me{" "}
+          <ExternalLink
+            link_url="https://youtu.be/37yWPs4x3xc"
+            underlined={true}
+          >
+            filming documentaries
+          </ExternalLink>
+          ,{" "}
+          <ExternalLink
+            link_url="https://emmatong.myportfolio.com/work"
+            underlined={true}
+          >
+            taking photos
+          </ExternalLink>
+          , or playing bass guitar!
         </p>
       </Subsection>
     </div>

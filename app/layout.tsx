@@ -19,9 +19,11 @@ export default function RootLayout({
       <body
         className={`${gothic_a1.className} ${gothic_a1.className} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <div className="w-full flex flex-col items-center px-8 sm:px-12">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ export default function Subsection({
 }) {
   return (
     <section>
-      <h2 className="text-3xl font-medium pb-8">{subsectionHeader}</h2>
+      <h2 className="text-2xl sm:text-3xl font-medium pb-8 text-accent">{subsectionHeader}</h2>
       {children}
     </section>
   );

@@ -6,17 +6,17 @@ import { development_projects, design_projects } from "@/app/lib/content";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-24 px-48 py-24">
-      <Hero />
-      <Section sectionHeader="development">
-        <CardWrapper projects={development_projects} />
-      </Section>
-      <Section sectionHeader="design">
-        <CardWrapper projects={design_projects} />
-      </Section>
-      <Section sectionHeader="about">
-        <About />
-      </Section>
-    </div>
+      <div className="max-w-250 py-24 flex flex-col items-center gap-24">
+        <Hero />
+        <Section sectionHeader="development">
+          <CardWrapper projects={development_projects} />
+        </Section>
+        <Section sectionHeader="design">
+          <CardWrapper projects={design_projects} />
+        </Section>
+        <Section sectionHeader="about">
+          <About />
+        </Section>
+      </div>
   );
 }
