@@ -24,6 +24,11 @@ export const education: Experience[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "Forage",
+    description: ["Software Engineer"],
+    date: "2025 -",
+  },
+  {
     company: "Carnegie Mellon University, School of Computer Science",
     description: ["Functional Programming Course Teaching Assistant"],
     date: "2022 - 2025",

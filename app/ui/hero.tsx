@@ -29,9 +29,8 @@ export default function Hero() {
         <li className="flex gap-2">
           <AsteriskIcon size="20px" />{" "}
           <p className="flex-1">
-            Currently seeking entry-level{" "}
-            <span className="font-semibold">software engineering</span>{" "}
-            positions.
+            Current <span className="font-semibold">Software Engineer</span> at{" "}
+            <span className="font-semibold">Forage</span>.
           </p>
         </li>
       </ul>
